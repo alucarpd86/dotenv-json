@@ -5,9 +5,9 @@ const path = require("path");
 const beforeValue = "value2";
 const afterValue = "value1";
 
-changeValueTo(beforeValue);
-
 const dotenvJSON = require("../index");
+
+changeValueTo(beforeValue);
 
 assert.ok(!process.env.hasOwnProperty("sample"));
 
@@ -26,7 +26,7 @@ setTimeout(() => {
     assert.equal(process.env.sample, afterValue);
 
     process.exit(0);
-},2000);
+},1000);
 
 function changeValueTo(str) {
     var filepath = path.resolve(process.cwd(), ".env.json");

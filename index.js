@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const fileWatcher = require('chokidar');
 
 var opts = {
     path: ".env.json",
@@ -13,7 +14,11 @@ module.exports = function dotenvJSON(options) {
     updateConfiguration();
 
     if (opts.watch) {
-        fs.watchFile(path.resolve(process.cwd(), opts.path), {interval: 1000}, (curr, prev) => {
+        fileWatcher.watch(path.resolve(process.cwd(), opts.path), {
+            cwd: __dirname,
+            awaitWriteFinish: true,
+            depth: 1
+        }).on('all', (event, path) => {
             updateConfiguration();
         });
     }
