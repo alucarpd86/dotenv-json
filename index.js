@@ -33,6 +33,9 @@ function updateConfiguration() {
 
     try {
         for (const key in envConfig) {
+            if (typeof envConfig[key] === "object") {
+                envConfig[key] = JSON.stringify(envConfig[key]);
+            }
             if (opts.override) {
                 process.env[key] = envConfig[key];
             } else {
