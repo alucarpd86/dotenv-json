@@ -1,6 +1,6 @@
 {
   "name": "dotenv-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load environment variables via a JSON file",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxbeatty/dotenv-json.git"
+    "url": "git+https://github.com/alucarpd86/dotenv-json.git"
   },
   "keywords": [
-    "dotenv"
+    "dotenv",
+    "dotenvjson"
   ],
-  "author": "Max Beatty",
+  "author": "Matteo Bruni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxbeatty/dotenv-json/issues"
+    "url": "https://github.com/alucarpd86/dotenv-json/issues"
   },
-  "homepage": "https://github.com/maxbeatty/dotenv-json#readme"
+  "homepage": "https://github.com/alucarpd86/dotenv-json#readme"
 }
