@@ -1,6 +1,6 @@
 {
   "name": "@alucarpd86/dotenv-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Load environment variables via a JSON file",
   "main": "index.js",
   "scripts": {
