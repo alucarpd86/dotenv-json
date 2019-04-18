@@ -4,7 +4,7 @@
   "description": "Load environment variables via a JSON file",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js"
+    "test": "node node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
